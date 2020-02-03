@@ -42,6 +42,19 @@
     vaporisé lors de la cuisson. Sans ajout de levain ou levure, le pain est dit azyme.
   </p>
 
+  <!-- 
+    img tag declaring a set of images with different definition 
+    but the browser mostly download the highest definition available
+  -->
+  <!-- 
+    size attribute change the display size according to media size
+  -->
+  <img src="images/pain-sm.jpg" 
+        srcset="images/pain-md.jpg 960w,
+                images/pain-sm.jpg 640w"        
+        size="(min-size:700px) 800px, 50%"
+        alt="pain">
+
   <h2>Historique</h2>
   <h3>Prehistoire</h3>
   <p>
