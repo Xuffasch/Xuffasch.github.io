@@ -12,130 +12,168 @@
 </head>
 
 <body>
-  <h1>Le Pain</h1>
-  <p>
-    <!-- Use strong instead of b(old) and em(phasis) instead i(talic) to give sementics to text -->
-    <!-- use of class in tags extends the meaning of the highlighted element-->
-    Le pain est <b>l'aliment de base traditionnel</b> de nombreuses cultures. Il est fabriqué à partir des ingrédients
-    qui sont la <em class="ingredient">farine</em> et <em class="ingredient">l'eau</em>. Il contient généralement du <em
-      class="ingredient">sel</em>. D'autres ingrédients s'ajoutent selon le type de pain et la manière dont il est
-    préparé culturellement. Lorsqu'on ajoute <em class="ingredient">le levain ou la levure</em>, la pâte du pain est
-    soumise à un gonflement dû à la <strong class="technique">fermentation</strong>.
-  </p>
-  <p>
-    <!-- Link inside of the page by a fragment identifier 
-    There should be a tag in this page having a attribute id equal to the fragment identifier "fabrication" in the current case.
-    -->
-    Le pain est obtenu par <a href="index.html#fabrication">cuisson de la pâte</a>, au four traditionnel, ou four à
-    pain, ou par d'autres méthodes (pierres chaudes par exemple). Une personne dont le métier est de fabriquer le pain
-    (panification) est un boulanger. Le pain est commercialisé dans une boulangerie.
-  </p>
-  <p>
-    La farine provient principalement de céréales panifiables — blé (froment), épeautre ou seigle. On peut y adjoindre,
-    en quantité modérée, des farines d'autres denrées non panifiables tels que le sarrasin, l'orge, le maïs, la
-    châtaigne, la noix… Les céréales panifiables se caractérisent par la présence de gluten, ensemble de protéines aux
-    propriétés élastiques, qui permettent d'emprisonner les bulles de dioxyde de carbone dégagées par la fermentation,
-    qui permet la montée de la pâte, dite « pâte levée », et crée la mie.
-  </p>
-  <p>
-    Cette fermentation, dite fermentation alcoolique, produit outre le dioxyde de carbone, de l'éthanol, qui est
-    vaporisé lors de la cuisson. Sans ajout de levain ou levure, le pain est dit azyme.
-  </p>
+  <main>
+    <h1>Le Pain</h1>
+    <p>
+      <!-- Use strong instead of b(old) and em(phasis) instead i(talic) to give sementics to text -->
+      <!-- use of class in tags extends the meaning of the highlighted element-->
+      Le pain est <b>l'aliment de base traditionnel</b> de nombreuses cultures. Il est fabriqué à partir des ingrédients
+      qui sont la <em class="ingredient">farine</em> et <em class="ingredient">l'eau</em>. Il contient généralement du
+      <em class="ingredient">sel</em>. D'autres ingrédients s'ajoutent selon le type de pain et la manière dont il est
+      préparé culturellement. Lorsqu'on ajoute <em class="ingredient">le levain ou la levure</em>, la pâte du pain est
+      soumise à un gonflement dû à la <strong class="technique">fermentation</strong>.
+    </p>
+    <p>
+      <!-- Link inside of the page by a fragment identifier 
+      There should be a tag in this page having a attribute id equal to the fragment identifier "fabrication" in the current case.
+      -->
+      Le pain est obtenu par <a href="index.html#fabrication">cuisson de la pâte</a>, au four traditionnel, ou four à
+      pain, ou par d'autres méthodes (pierres chaudes par exemple). Une personne dont le métier est de fabriquer le pain
+      (panification) est un boulanger. Le pain est commercialisé dans une boulangerie.
+    </p>
+    <p>
+      La farine provient principalement de céréales panifiables — blé (froment), épeautre ou seigle. On peut y
+      adjoindre,
+      en quantité modérée, des farines d'autres denrées non panifiables tels que le sarrasin, l'orge, le maïs, la
+      châtaigne, la noix… Les céréales panifiables se caractérisent par la présence de gluten, ensemble de protéines aux
+      propriétés élastiques, qui permettent d'emprisonner les bulles de dioxyde de carbone dégagées par la fermentation,
+      qui permet la montée de la pâte, dite « pâte levée », et crée la mie.
+    </p>
+    <p>
+      Cette fermentation, dite fermentation alcoolique, produit outre le dioxyde de carbone, de l'éthanol, qui est
+      vaporisé lors de la cuisson. Sans ajout de levain ou levure, le pain est dit azyme.
+    </p>
+  </main>
+
 
   <!-- 
-    img tag declaring a set of images with different definition 
-    but the browser mostly download the highest definition available
-  -->
-  <!-- 
-    size attribute change the display size according to media size
-  -->
-  <img src="images/pain-sm.jpg" srcset="images/pain-md.jpg 960w,
-                images/pain-sm.jpg 640w" size="(min-size:700px) 800px, 50%" alt="pain">
+    Add aside element for element that are sementically tangent to the main subject -->
+  <aside>
+    <!-- 
+      img tag declaring a set of images with different definition 
+      but the browser mostly download the highest definition available -->
+    <!-- size attribute change the display size according to media size -->
+    <img src="images/pain-sm.jpg" srcset="images/pain-md.jpg 960w,
+                images/pain-sm.jpg 640w" size="(max-size:700px) 100px, 20%" alt="pain">
+  </aside>
 
-  <h2>Historique</h2>
-  <h3>Prehistoire</h3>
-  <p>
-    Des traces de pain sans levain ont été trouvées sur plusieurs sites datant de 30 000 av. J.-C. : des grains d'amidon
-    provenant de rhizomes de roseau à massette et de fougère ont été identifiés sur des pierres assimilées à des pilons
-    et des mortiers. Ces rhizomes étant toxiques, l'étude suggère que ces racines étaient pelées, broyées, puis cuites1.
-  </p>
-  <!-- For external links 
-    the transfer protocol can be omitted using just "//". In this case, the transfer will be done by the default protocol of the remote server
-  -->
-  <p>
-    Au Moyen-Orient, il est très probable que le pain ait été fabriqué avant l'apparition de l'agriculture. Des fouilles
-    à Çatal Höyük (actuelle Turquie) montrent que, dans cette région au moins, le pain est apparu avant cette dernière,
-    et même avant la poterie. Il était cuit, agrémenté de graines d'herbe de Sainte-Sophie, plus ancienne preuve de
-    l'usage de <a href="https://fr.wikipedia.org/wiki/Condiment">condiments</a>2. Encore plus anciens, les restes d'un
-    pain plat de céréales sauvages, cuit il y a 14 400 ans
-    sur le site natoufien de Shubayqa 1, ont été découverts en 2018 au nord-est de l'actuelle <a
-      href="//fr.wikipedia.org/wiki/Jordanie">Jordanie</a>3,4.</p>
-  <p>
-    Au début de l’agriculture vers 8000 av. J.-C., dans la région du Croissant fertile, l'amidon provient
-    essentiellement de grains de céréales. Au cours de l’Antiquité, avec l’avènement des civilisations méditerranéennes
-    (sumérienne, égyptienne, grecque et romaine), l'histoire du pain devient intimement mêlée à l'évolution des outils,
-    comme la meule à grains.</p>
+  <!--
+    Encapsulate in article element contents that contribute to the subject
+    of the page but can be removed without changing purpose of the subject -->
+  <article>
+    <h2>Historique</h2>
+    <!-- Add section element for content separation 
+      article can be separated in sections as sections can be made of articles -->
+    <section>
+      <h3>Prehistoire</h3>
+      <p>
+        Des traces de pain sans levain ont été trouvées sur plusieurs sites datant de 30 000 av. J.-C. : des grains
+        d'amidon
+        provenant de rhizomes de roseau à massette et de fougère ont été identifiés sur des pierres assimilées à des
+        pilons
+        et des mortiers. Ces rhizomes étant toxiques, l'étude suggère que ces racines étaient pelées, broyées, puis
+        cuites1.
+      </p>
+      <!-- For external links 
+      the transfer protocol can be omitted using just "//". In this case, the transfer will be done by the default protocol of the remote server -->
+      <p>
+        Au Moyen-Orient, il est très probable que le pain ait été fabriqué avant l'apparition de l'agriculture. Des
+        fouilles
+        à Çatal Höyük (actuelle Turquie) montrent que, dans cette région au moins, le pain est apparu avant cette
+        dernière,
+        et même avant la poterie. Il était cuit, agrémenté de graines d'herbe de Sainte-Sophie, plus ancienne preuve de
+        l'usage de <a href="https://fr.wikipedia.org/wiki/Condiment">condiments</a>2. Encore plus anciens, les restes
+        d'un
+        pain plat de céréales sauvages, cuit il y a 14 400 ans
+        sur le site natoufien de Shubayqa 1, ont été découverts en 2018 au nord-est de l'actuelle <a
+          href="//fr.wikipedia.org/wiki/Jordanie">Jordanie</a>3,4.</p>
+      <p>
+        Au début de l’agriculture vers 8000 av. J.-C., dans la région du Croissant fertile, l'amidon provient
+        essentiellement de grains de céréales. Au cours de l’Antiquité, avec l’avènement des civilisations
+        méditerranéennes
+        (sumérienne, égyptienne, grecque et romaine), l'histoire du pain devient intimement mêlée à l'évolution des
+        outils,
+        comme la meule à grains.</p>
+    </section>
 
-  <h3>Antiquité</h3>
-  <!-- Add details/summary element for hide/display country info -->
-  <details>
-    <summary>Egypte</summary>
-    <p>
-      On attribue généralement l'invention du pain au levain aux Égyptiens alors que, des siècles plus tard, les Romains
-      se nourrissaient encore de bouillie5. Grands observateurs de la nature, les Égyptiens avaient compris qu'ils
-      pouvaient fabriquer du pain en mélangeant du grain écrasé, ou moulu, à l'eau du Nil, particulièrement riche en
-      limons, ceux-ci renfermant des agents de fermentation utilisés encore trois millénaires plus tard. Cette
-      découverte
-      — laisser la pâte en attente, livrée à l'action des germes, puis oser la cuire —, donna aux habitants de la vallée
-      du Nil un ascendant considérable sur les peuples mangeurs de bouillie et de galette5.</p>
-    <p>
-      Les vestiges les plus reculés de pain remontent à l'époque prédynastique. Tout au long de l'histoire, les anciens
-      Égyptiens ont placé des provisions dans les tombes pour assurer au mort sa subsistance dans l'au-delà. Les
-      nécropoles de l'époque gerzéenne (-3650, -3400) ont conservé des restes de pain levé (Peters-Destéract6, 2005). Un
-      repas funéraire, bien conservé dans la tombe Saqqarah 3477 de la deuxième dynastie (-2850, -2647), contenait une
-      miche de pain triangulaire, faite de blé emmer7. Dans la tombe de Kha, à Deir el-Médineh (XVIIIe dynastie, -1550,
-      -1292), on a trouvé un échantillonnage presque complet des pains utilisés à l'époque. « Ils sont de forme ovale,
-      rebondis, à la croute luisante comme s'ils étaient sortis hier du four… Sont présents ceux de forme circulaire,
-      plus
-      ou moins aplatis, comme les pains actuellement en usage en Égypte et d'autres formes variées imitant aussi des
-      éventails, des vases et des animaux comme le petit pain représentant une gazelle les pattes liéesN 1. »</p>
-    <p>
-      Si ces vestiges sont des témoignages directs précieux du savoir-faire égyptien, les bas-reliefs et les fresques
-      nous apprennent beaucoup plus sur les techniques de broyage du grain, du tamisage, de la préparation de la pâte au
-      levain et de sa cuisson6. Par exemple, la légende d'une scène de boulangerie appartenant à un mastaba de Giza,
-      dans
-      laquelle la boulangère interpelle son compagnon, préposé au chauffage des fours, en ces mots : « Fais que ça
-      chauffe
-      bien, car la pâte a reçu le heza. » Il semble que heza, après s'être appliqué au levain, ait désigné par la suite la pâte levée.</p>
-  </details>
-  <details>
-    <summary>Mésopotamie</summary>
-    <p>
-      En Mésopotamie, les galettes d'une pâte non levée sont cuites en les appliquant sur les parois brûlantes du four.
-      L'épopée de Gilgamesh évoque la figure du boulanger qui pétrit, pour la déesse, « le pain cuit sous la cendre ».
-      Le pain au levain ne fait son apparition qu'au cours du premier millénaire avant notre ère8. Sa préparation plus longue
-      et plus délicate en fait un mets réservé pour certaines occasions.</p>
-    <p>
-      Les Sumériens consommaient une variété impressionnante de biscuits (ni.har.ra) et de galettes, à base de pâte à pain
-      levé. Prêtresses et scribes faisaient des libations et des sacrifices en offrant du pain aux divinités9. Plus de 200
-      variétés de « pains » ont été enregistrées dans un recueil de tablettes (Benno Lansberger) — selon les farines, les
-      modes de pétrissage, les ingrédients (avec pistaches et figues sèches, raisins secs, etc.), cuissons et
-      présentations.</p>
-  </details>
+    <section>
+      <h3>Antiquité</h3>
+      <!-- Add details/summary element for hide/display country info -->
+      <details>
+        <summary>Egypte</summary>
+        <p>
+          On attribue généralement l'invention du pain au levain aux Égyptiens alors que, des siècles plus tard, les
+          Romains
+          se nourrissaient encore de bouillie5. Grands observateurs de la nature, les Égyptiens avaient compris qu'ils
+          pouvaient fabriquer du pain en mélangeant du grain écrasé, ou moulu, à l'eau du Nil, particulièrement riche en
+          limons, ceux-ci renfermant des agents de fermentation utilisés encore trois millénaires plus tard. Cette
+          découverte
+          — laisser la pâte en attente, livrée à l'action des germes, puis oser la cuire —, donna aux habitants de la
+          vallée
+          du Nil un ascendant considérable sur les peuples mangeurs de bouillie et de galette5.</p>
+        <p>
+          Les vestiges les plus reculés de pain remontent à l'époque prédynastique. Tout au long de l'histoire, les
+          anciens
+          Égyptiens ont placé des provisions dans les tombes pour assurer au mort sa subsistance dans l'au-delà. Les
+          nécropoles de l'époque gerzéenne (-3650, -3400) ont conservé des restes de pain levé (Peters-Destéract6, 2005).
+          Un
+          repas funéraire, bien conservé dans la tombe Saqqarah 3477 de la deuxième dynastie (-2850, -2647), contenait une
+          miche de pain triangulaire, faite de blé emmer7. Dans la tombe de Kha, à Deir el-Médineh (XVIIIe dynastie,
+          -1550,
+          -1292), on a trouvé un échantillonnage presque complet des pains utilisés à l'époque. « Ils sont de forme ovale,
+          rebondis, à la croute luisante comme s'ils étaient sortis hier du four… Sont présents ceux de forme circulaire,
+          plus
+          ou moins aplatis, comme les pains actuellement en usage en Égypte et d'autres formes variées imitant aussi des
+          éventails, des vases et des animaux comme le petit pain représentant une gazelle les pattes liéesN 1. »</p>
+        <p>
+          Si ces vestiges sont des témoignages directs précieux du savoir-faire égyptien, les bas-reliefs et les fresques
+          nous apprennent beaucoup plus sur les techniques de broyage du grain, du tamisage, de la préparation de la pâte
+          au
+          levain et de sa cuisson6. Par exemple, la légende d'une scène de boulangerie appartenant à un mastaba de Giza,
+          dans
+          laquelle la boulangère interpelle son compagnon, préposé au chauffage des fours, en ces mots : « Fais que ça
+          chauffe
+          bien, car la pâte a reçu le heza. » Il semble que heza, après s'être appliqué au levain, ait désigné par la
+          suite la pâte levée.</p>
+      </details>
+      <details>
+        <summary>Mésopotamie</summary>
+        <p>
+          En Mésopotamie, les galettes d'une pâte non levée sont cuites en les appliquant sur les parois brûlantes du
+          four.
+          L'épopée de Gilgamesh évoque la figure du boulanger qui pétrit, pour la déesse, « le pain cuit sous la cendre ».
+          Le pain au levain ne fait son apparition qu'au cours du premier millénaire avant notre ère8. Sa préparation plus
+          longue
+          et plus délicate en fait un mets réservé pour certaines occasions.</p>
+        <p>
+          Les Sumériens consommaient une variété impressionnante de biscuits (ni.har.ra) et de galettes, à base de pâte à
+          pain
+          levé. Prêtresses et scribes faisaient des libations et des sacrifices en offrant du pain aux divinités9. Plus de
+          200
+          variétés de « pains » ont été enregistrées dans un recueil de tablettes (Benno Lansberger) — selon les farines,
+          les
+          modes de pétrissage, les ingrédients (avec pistaches et figues sèches, raisins secs, etc.), cuissons et
+          présentations.</p>
+      </details>
+    </section>
+  </article>
 
-
-  <h2 id="fabrication">Fabrication</h2>
-  <p>
-    La fabrication du pain ou panification est le procédé technique qui permet de transformer de la farine en pain. Elle
-    demande la maîtrise de la fermentation et de la cuisson.
-  </p>
-  <p>
-    La technique de panification au levain, apparue en Égypte antique, a beaucoup évolué au cours des siècles.
-    L'utilisation de levure de bière puis la production industrielle de levure de boulanger à la fin du xixe siècle ont
-    favorisé le développement du pain obtenu par fermentation uniquement à la levure, comme les produits de type
-    baguettes françaises et pain de mie. En Europe du Nord et en Allemagne, où la consommation de pain de seigle est
-    importante, l'utilisation du levain est plus répandue car cette céréale est pauvre en gluten1.
-  </p>
+  <article>
+    <h2 id="fabrication">Fabrication</h2>
+    <p>
+      La fabrication du pain ou panification est le procédé technique qui permet de transformer de la farine en pain.
+      Elle
+      demande la maîtrise de la fermentation et de la cuisson.
+    </p>
+    <p>
+      La technique de panification au levain, apparue en Égypte antique, a beaucoup évolué au cours des siècles.
+      L'utilisation de levure de bière puis la production industrielle de levure de boulanger à la fin du xixe siècle
+      ont
+      favorisé le développement du pain obtenu par fermentation uniquement à la levure, comme les produits de type
+      baguettes françaises et pain de mie. En Europe du Nord et en Allemagne, où la consommation de pain de seigle est
+      importante, l'utilisation du levain est plus répandue car cette céréale est pauvre en gluten1.
+    </p>
+  </article>
 
   <h1>Typologie des pains du monde</h1>
   <p>
