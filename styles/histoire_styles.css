@@ -1,0 +1,90 @@
+/* Apply blue and 2em font font 
+  to h1 tag in nav element of the body */
+body > nav > h1 {
+  font-size: 2em;
+  color: blue;
+}
+/* remove dot icon for list items */
+body > nav > ul {
+  list-style-type: none;
+}
+/* set anchor with the id = "histoire" with underline */
+body > nav > ul a#histoire {
+  text-decoration: underline;
+}
+/* set all anchor to without underline */
+body > nav > ul a {
+  text-decoration: none;
+}
+
+/* First group and apply static styles */
+/* When the anchor has not been clicked yet */
+body > nav > ul li > a:link {
+  color: orange;
+}
+/* When the link has been visited */
+body > nav > ul li > a:visited {
+  color: red;
+}
+/* Then chronologically order styles by user action */
+/* the user has to hover over the anchor before being able to click*/
+body > nav > ul li:hover > a {
+  color: green;
+}
+/* the user touch down on the anchor but has not released the anchor yet */
+body > nav > ul li:active > a {
+  color: blue;
+}
+
+body > main {
+  text-align: center;
+}
+
+body > main > p {
+  font-family: "Courier New", sans-serif
+}
+
+#Egypte > :nth-child(2) {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-auto-rows: auto;
+}
+
+#Egypte > :nth-child(2) > figure {
+  align-items: center;
+  text-align: center;
+}
+/* Select section which id start with Ere-*/
+section[id|=Ere] > h2 {
+  font-weight: 800;
+  color: green;
+}
+
+article[class=Antiquite]#Egypte p {
+  color: blue;
+}
+
+article[class=Antiquite] h3 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+blockquote {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  outline: solid;
+  outline-width: 1px;
+  outline-color: red;
+  padding: 4px;
+}
+
+section, article > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+}
+
+body > footer {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
