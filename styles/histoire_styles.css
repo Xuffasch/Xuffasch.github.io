@@ -1,5 +1,15 @@
 /* Apply blue and 2em font font 
   to h1 tag in nav element of the body */
+
+html, body, main, section, article, div, p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+  
+body {
+  background-color: burlywood ;
+}
+
 body > nav > h1 {
   font-size: 2em;
   color: blue;
@@ -15,6 +25,15 @@ body > nav > ul a#histoire {
 /* set all anchor to without underline */
 body > nav > ul a {
   text-decoration: none;
+}
+body > nav {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+body > nav > h1 {
+  color: white;
 }
 
 /* First group and apply static styles */
@@ -38,10 +57,14 @@ body > nav > ul li:active > a {
 
 body > main {
   text-align: center;
+  background-color: yellow;
+  padding: 12px;
 }
 
-body > main > p {
-  font-family: "Courier New", sans-serif
+body > main > div {
+  font-family: "Courier New", sans-serif;
+  line-height: 1.5;
+  padding: 12px;
 }
 
 #Egypte > :nth-child(2) {
@@ -55,9 +78,23 @@ body > main > p {
   text-align: center;
 }
 /* Select section which id start with Ere-*/
+section {
+  padding: 12px;
+}
+
+section h2, h3, p, a {
+  margin: 8px;
+}
+
 section[id|=Ere] > h2 {
   font-weight: 800;
   color: green;
+  background-color: white;
+  box-shadow: 2px 4px 4px 2px #111;
+  display: inline;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: start;
 }
 
 article[class=Antiquite]#Egypte p {
